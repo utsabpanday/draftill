@@ -9,6 +9,10 @@
 </p>
 
 <p align="center">
+  <strong>Stop Using Final Draft.</strong>
+</p>
+
+<p align="center">
   <strong>Version 0.4.15</strong> · Windows 10/11 x64 · Electron + React + TypeScript
 </p>
 
