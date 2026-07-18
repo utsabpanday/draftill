@@ -1,0 +1,120 @@
+DRAFTILL SOURCE-AVAILABLE COMMERCIAL USE LICENSE
+Version 1.0, July 2026
+
+Copyright (c) 2026 Draftill. All rights reserved.
+
+IMPORTANT: This is a source-available license. It is not an open-source license
+and has not been approved by the Open Source Initiative.
+
+1. DEFINITIONS
+
+"Software" means the Draftill source code, object code, executable files,
+documentation, artwork, and other first-party materials distributed with this
+license.
+
+"Licensor" means the copyright holder or holders of the Software.
+
+"Licensee" means any person or legal entity exercising permissions granted by
+this license.
+
+"Commercial Workflow Use" means using an unmodified copy of the Software as a
+tool within a business, profession, production, or other revenue-generating
+workflow. Commercial Workflow Use does not include selling, licensing,
+sublicensing, renting, leasing, hosting, white-labeling, or distributing the
+Software itself.
+
+"Modification" means any change, adaptation, translation, arrangement,
+alteration, patch, derivative work, or other work based on the Software,
+excluding configuration performed solely through settings intentionally
+exposed by an unmodified copy of the Software.
+
+2. LIMITED LICENSE GRANT
+
+Subject to continued compliance with this license, the Licensor grants the
+Licensee a worldwide, non-exclusive, non-transferable, non-sublicensable
+license to:
+
+a. access, download, and view the source code for evaluation, education,
+   security review, and audit;
+b. make reasonable backup copies of the unmodified Software;
+c. compile the unmodified source code solely for the Licensee's own use; and
+d. install and run unmodified copies of the Software for personal,
+   educational, internal organizational, and Commercial Workflow Use.
+
+3. RESTRICTIONS
+
+Except with prior written permission from the Licensor, the Licensee may not:
+
+a. modify the Software or create, prepare, maintain, or distribute any
+   Modification or derivative work;
+b. distribute, publish, mirror, sublicense, sell, resell, rent, lease, lend,
+   white-label, or otherwise provide the Software or source code to another
+   person or entity, except by linking to an official Draftill repository or
+   official Draftill release;
+c. offer the Software, substantially similar functionality, or any portion of
+   the Software as a hosted service, managed service, software-as-a-service
+   product, or paid download;
+d. remove, hide, or alter copyright, license, attribution, trademark, or other
+   proprietary notices;
+e. use Draftill names, logos, icons, product identity, or other trademarks to
+   imply endorsement, affiliation, or origin of another product; or
+f. circumvent technical measures intended to enforce security, licensing, or
+   access restrictions.
+
+A fork created solely through GitHub's normal public-repository functionality
+may be retained only as an unmodified copy for viewing and reference. This
+sentence grants no right to modify, distribute, or commercially exploit the
+fork.
+
+4. OWNERSHIP
+
+The Software is licensed, not sold. The Licensor retains all right, title, and
+interest in the Software, including all copyright, trademark, patent, trade
+secret, and other intellectual-property rights not expressly granted here.
+No implied license is granted.
+
+5. THIRD-PARTY MATERIALS
+
+Third-party software, libraries, runtimes, fonts, models, media, and other
+materials included with or used by the Software are not licensed under this
+license. They remain governed by their own license terms and notices. Where a
+third-party license grants broader rights, those broader rights apply only to
+that third-party material and not to Draftill's first-party code or assets.
+
+6. FEEDBACK AND CONTRIBUTIONS
+
+Bug reports, ideas, and feature requests do not grant the submitter rights in
+the Software. Source-code contributions are not accepted under this license
+unless the Licensor and contributor first enter a separate written agreement.
+
+7. TERMINATION
+
+This license terminates automatically upon breach. On termination, the
+Licensee must stop using the Software and delete all copies under the
+Licensee's control, except copies whose retention is required by law. Sections
+3 through 10 survive termination.
+
+8. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR
+A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, OR RELIABILITY. THE
+LICENSEE ASSUMES ALL RISK ARISING FROM USE OF THE SOFTWARE.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR WILL NOT BE LIABLE FOR ANY
+INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES,
+OR FOR LOSS OF DATA, PROFITS, REVENUE, GOODWILL, OR BUSINESS INTERRUPTION,
+ARISING FROM OR RELATED TO THE SOFTWARE OR THIS LICENSE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+10. GENERAL
+
+If any provision is unenforceable, it will be limited or removed only to the
+minimum extent necessary, and the remaining provisions will remain effective.
+A waiver must be in writing and does not waive later breaches. This license is
+the complete agreement concerning the permissions granted here unless the
+Licensor and Licensee sign a separate written agreement.
+
+For permissions beyond this license, contact the Draftill copyright holder.

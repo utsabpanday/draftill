@@ -1,0 +1,62 @@
+// @see - https://www.electron.build/configuration/configuration
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "com.draftill.app",
+  "asar": true,
+  "productName": "Draftill",
+  "icon": "public/appicon.ico",
+  "fileAssociations": [
+    {
+      "ext": "drftl",
+      "name": "Draftill Screenplay",
+      "description": "Draftill Screenplay",
+      "icon": "public/drftl-file.ico"
+    }
+  ],
+  "directories": {
+    "output": "release/${version}"
+  },
+  "files": [
+    "dist",
+    "dist-electron"
+  ],
+  "extraResources": [
+    {
+      "from": "resources/llama",
+      "to": "llama"
+    }
+  ],
+  "mac": {
+    "target": [
+      "dmg"
+    ],
+    "artifactName": "${productName}-Mac-${version}-Installer.${ext}"
+  },
+  "win": {
+    "icon": "public/appicon.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "artifactName": "${productName}-Windows-${version}-Setup.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false,
+    "installerSidebar": "public/installer-sidebar-final.bmp",
+    "uninstallerSidebar": "public/installer-sidebar-final.bmp",
+    "installerHeader": "public/installer-header-final.bmp"
+  },
+  "linux": {
+    "target": [
+      "AppImage"
+    ],
+    "artifactName": "${productName}-Linux-${version}.${ext}"
+  }
+}

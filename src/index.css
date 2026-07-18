@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-inter: Arial, Helvetica, sans-serif;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-courier: 'Courier Prime', monospace;
+
+  --color-bg-sidebar: #1a1a1a;
+  --color-bg-canvas: #e8e8e6;
+  --color-accent-amber: #F4C430;
+  --color-text-primary: #101113;
+  --color-text-light: #e8e8e6;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-canvas);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Custom Text Selection Highlight */
+::selection {
+  background-color: rgba(244, 196, 48, 0.35); /* Yellow/Amber selection */
+  color: inherit;
+}
+.prosemirror-editor ::selection {
+  background-color: rgba(244, 196, 48, 0.45); /* Slightly darker yellow highlight in the editor */
+  color: inherit;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Settings should stay spacious and clean; scrolling remains available on smaller windows. */
+.settings-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.settings-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Screenplay Element Margins & Formatting */
+.prosemirror-editor {
+  outline: none;
+  font-family: var(--screenplay-font-family, var(--font-courier));
+  box-sizing: border-box;
+}
+
+/* The font picker controls the entire screenplay, including legacy inline marks. */
+.prosemirror-editor .page-sheet,
+.prosemirror-editor .page-sheet * {
+  font-family: var(--screenplay-font-family, var(--font-courier)) !important;
+}
+
+.prosemirror-editor .draftill-entity-reference {
+  border-radius: 3px;
+  cursor: help;
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.prosemirror-editor .draftill-character-reference {
+  background: rgba(56, 189, 248, 0.055);
+  box-shadow: inset 0 -1px rgba(56, 189, 248, 0.34);
+}
+
+.prosemirror-editor .draftill-location-reference {
+  background: rgba(244, 196, 48, 0.06);
+  box-shadow: inset 0 -1px rgba(244, 196, 48, 0.38);
+}
+
+.prosemirror-editor .draftill-entity-reference:hover {
+  background: rgba(244, 196, 48, 0.12);
+}
+
+/* The EditorView mounts a second contenteditable element inside the wrapper. */
+.prosemirror-editor > .ProseMirror,
+.prosemirror-editor > .ProseMirror:focus,
+.prosemirror-editor > .ProseMirror:focus-visible {
+  width: 100%;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Pages remain editable without ProseMirror's blue node-selection outline in the page gap. */
+.prosemirror-editor .page-container,
+.prosemirror-editor .page-container.ProseMirror-selectednode,
+.prosemirror-editor .page-sheet.ProseMirror-selectednode {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.scene-heading {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  font-family: var(--font-courier);
+}
+
+.action {
+  margin-bottom: 16px;
+  line-height: 1.4;
+  text-align: left;
+  font-family: var(--font-courier);
+}
+
+.character {
+  margin-top: 16px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-family: var(--font-courier);
+  font-weight: 700;
+}
+
+.parenthetical {
+  margin-bottom: 2px;
+  font-style: italic;
+  font-family: var(--font-courier);
+}
+
+.dialogue {
+  margin-bottom: 16px;
+  line-height: 1.4;
+  font-family: var(--font-courier);
+}
+
+.transition {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  text-align: right;
+  font-family: var(--font-courier);
+}
+
+.shot {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-courier);
+}
+
+/* Dual Dialogue Grid */
+.dual-dialogue {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: var(--font-courier);
+}
+
+.dual-dialogue-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dual-dialogue-column .character {
+  margin-left: 20px !important;
+}
+
+.dual-dialogue-column .parenthetical {
+  margin-left: 10px !important;
+}
+
+.dual-dialogue-column .dialogue {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Revision Tracker Color Coding (Star markers on page-white editor) */
+.revised-blue {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+  border-left: 3px solid #3b82f6;
+  padding-left: 8px;
+}
+.revised-pink {
+  background-color: rgba(236, 72, 153, 0.1) !important;
+  border-left: 3px solid #ec4899;
+  padding-left: 8px;
+}
+.revised-yellow {
+  background-color: rgba(245, 158, 11, 0.1) !important;
+  border-left: 3px solid #f59e0b;
+  padding-left: 8px;
+}
+.revised-green {
+  background-color: rgba(16, 185, 129, 0.1) !important;
+  border-left: 3px solid #10b981;
+  padding-left: 8px;
+}
+
+/* ProseMirror Placeholder text styling */
+.prosemirror-editor p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #adb5bd;
+  pointer-events: none;
+  height: 0;
+}
